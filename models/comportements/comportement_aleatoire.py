@@ -1,0 +1,7 @@
+import random
+from models.comportement import Comportement
+
+class ComportementAleatoire(Comportement):
+    def agir(self, ennemi): 
+        return random.choice(["attaque", "defend"])
+
